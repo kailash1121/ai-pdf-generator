@@ -1,0 +1,7 @@
+cd /storage/emulated/0/ai-pdf-generator
+git init
+git add .
+git commit -m "Add mobile-compatible lightweight version"
+git branch -M main
+git remote add origin https://github.com/<username>/ai-pdf-generator-mobile.git
+git push -u origin main
