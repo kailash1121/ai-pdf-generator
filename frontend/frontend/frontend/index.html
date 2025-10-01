@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI PDF Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📄 AI PDF Generator</h1>
+    <p>Upload your text or checklist and generate a PDF instantly!</p>
+
+    <!-- Form to generate PDF -->
+    <form id="pdfForm">
+      <textarea id="pdfText" placeholder="✍️ Write your content here..." rows="6"></textarea>
+      <br />
+      <button type="submit">Generate PDF</button>
+    </form>
+
+    <!-- Form to upload existing PDF -->
+    <h2>📂 Upload Existing PDF</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="pdfFile" accept="application/pdf" />
+      <button type="submit">Upload</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
